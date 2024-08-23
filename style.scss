@@ -1,0 +1,319 @@
+header{
+    background-image: linear-gradient(to right, rgb(82, 3, 82) 0%, rgb(43, 8, 43) 100%);
+    padding: 10px 0;
+    .container{
+        
+        .col-4{
+            .icon{
+                display: none;
+            }
+            .items{
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    padding: 0 20px;
+                    text-align: center;
+                    transition: 1s;
+                    position: relative;
+                    display: inline-block;
+        
+                }
+                a[href="login.html"],
+                a[href="sign.html"] {
+                    display: none; /* Hide Login and Sign Up by default */
+                }
+                a::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -5px; 
+                    left: 0;
+                    background-color: bisque;
+                    visibility: hidden;
+                    transform: scaleX(0);
+                    transition: all 0.3s ease-in-out;
+                }
+                a:hover::after{
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+                a:hover{
+                    transition: 1s;
+                    color: bisque;
+                }
+            }
+
+            
+            .login{
+                text-align: end;
+                a{
+                    text-decoration: none;
+                    button {
+                        background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+                        text-align: center;
+                        transition: 0.5s;
+                        font-weight: 500;
+                        padding: 5px 10px;
+                        margin: 0 10px;
+                        color: white;            
+                        box-shadow: 0 0 20px #9733EE;
+                        border-radius: 10px;
+                        border: 1px solid #9733EE;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        background: linear-gradient(to right, #9733EE, #DA22FF, #9733EE, #DA22FF);
+                        transition: transform 0.5s;
+                        z-index: 0;
+                        transform: translateX(-100%) translateY(-100%);
+                    }
+                    
+                    button:hover:before {
+                        transform: translateX(0) translateY(0);
+                    }
+                    
+                    button span {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    
+                    button:hover {
+                        color: whitesmoke;
+                        box-shadow: 0 0 30px #DA22FF;
+                    }    
+                }
+                
+            }
+    }
+    
+    }
+}
+
+
+
+
+main{
+    .opening{
+        background-image: linear-gradient(to right,black 0%, rgb(53, 2, 53) 50%, black 100% );
+        height: 100vh;
+
+        .col-12{
+            margin-top: 150px;
+            text-align: center;
+            h2{
+                color: white;
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                animation-duration: 1.5s;
+            }
+
+            button{
+                background-color: black;
+                border: 2px solid pink;
+                border-radius: 10px;
+                color: pink;
+                box-shadow: 0 0 15px pink;
+                font-weight: 600;
+                padding: 5px 7px;
+                transition: 1s;
+                margin: 25px 0;
+                animation-duration: 3s;
+
+            }
+            button:hover{
+                background-color: pink;
+                color: black;
+                border: 2px solid pink;
+                transition: 1s;
+            }
+        }
+    }
+
+    .thing{
+        background-image: linear-gradient(to right,black 0%, rgb(53, 2, 53) 50%, black 100% );
+        padding: 150px 0;
+
+        .title{
+            text-align: center;
+            padding: 75px 0;
+            color: whitesmoke;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            a{
+                button{
+                    margin-top: 35px;
+                    border: none;
+                    background-color: cyan;
+                    color: rgb(100, 100, 12);
+                    font-size: 20px;
+                    font-weight: 600;
+                    box-shadow: 0 0 20px yellow;
+                    border-radius: 10px;
+                    padding: 15px 10px;
+                    transition: 1s;
+
+                }
+                button:hover{
+                    background-color: yellow;
+                    color: rgb(9, 82, 82);
+                    box-shadow:0 0 20px cyan;
+                    transition: 1s;
+
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #14071f;
+    padding: 50px 0;
+    h2{
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+    }
+
+    p{
+        color: white;
+        margin-left: 25px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .icons{
+        margin-left: 40px;
+        a{
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            line-height: 49px;
+            color: white;
+            text-align: center;
+            transition: 1s;
+            cursor: pointer;
+        }
+        
+         a:hover{
+            background-color: white;
+            color: #2c3e50;
+            transition: 0.5s;
+        }
+        
+    }
+    .help a{
+        text-decoration: none;
+        color: white;
+        display: grid;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .help a:hover{
+        color: yellow;
+        transition: 0.3s;
+    }
+
+
+}
+
+@media only screen and (max-width: 995px) {
+    
+    
+    .icon {
+        position: absolute;
+        right: 40px;
+        color: white;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        background-color: black;
+        position: absolute;
+        right: 40px;
+        top: 60px;
+        z-index: 1000;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .items a{
+        padding: 10px 0;
+        color: yellow !important;
+        border-bottom: 1px solid aqua;
+        
+    }
+    a:hover{
+        color: rgb(250, 250, 106);
+    }
+    a[href="login.html"],
+                a[href="sign.html"] {
+                    display: block !important; /* Hide Login and Sign Up by default */
+                }
+    .menu.active {
+        display: flex;
+    }
+    .login {
+        display: none;
+    }
+    .log {
+        position: absolute;
+        right: -35px;
+    }
+
+    footer{
+        .container{
+            .col{
+                h2{
+                    font-size: 20px;
+                }
+                .icons{
+                    margin: 10px 0;
+                    a{
+                        font-size: 15px;
+                        margin: 10px 20px;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    position: absolute;
+                    right: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+ 

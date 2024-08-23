@@ -1,0 +1,126 @@
+main{
+    background-image: linear-gradient(to right,black 0%, rgb(53, 2, 53) 50%, black 100% );
+    padding: 75px 0;
+    .about{
+        padding: 100px 0;
+        position: relative;
+        .col-6{
+            .title{
+
+                margin-top: 35px;
+                .name{
+                    color: bisque;
+                    font-family: "Mochiy Pop One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 45px;
+                    padding-bottom: 20px;
+                    animation-duration: 2s;
+                    
+                }
+                span{
+                    font-size: 20px;
+                    color: yellow;
+                    font-family: "Bebas Neue", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                .kl{
+                    margin-top: 25px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: #ffff00;
+                    font-weight: 400;
+                    animation-duration: 2s;
+                }
+                a{
+                    text-decoration: none;
+                    button {
+                        animation-duration: 2s;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: black;
+                        color: bisque;
+                        margin-top: 25px;
+                        font-weight: 500;
+                        padding: 15px;
+                        border-top: 2px solid paleturquoise;
+                        border-left: 2px solid palegreen;
+                        background-image: linear-gradient(to right, black 50%, palegreen 50%);
+                        background-size: 200%;
+                        background-position: left;
+                        transition: background-position 0.8s, transform 0.8s, border-top 0.8s, border-left 0.8s, color 0.8s;
+                    }
+                    
+                    button:hover {
+                        background-position: right;
+                        color: black;
+                        transform: scale(0.9);
+                        border: none;
+                    }
+                    
+                    button img {
+                        width: 35px;
+                    }
+                    
+
+                }
+            }
+            .image{
+                img{
+                    position: absolute;
+                    right: 150px;
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 200px;
+                    border: 3px solid aquamarine;
+                    transition: 1s;
+                    animation-duration: 4s;
+
+                }
+                img:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                    rotate: 360deg;
+    
+                }
+            }
+
+            
+        }
+    }
+    
+}
+
+
+
+@media (max-width: 995px) {
+    .title{
+        .name{
+            position: absolute;
+            top: 0;
+        }
+        span{
+            position: absolute;
+            top: 80px;
+        }
+        .kl{
+            margin-top: 200px;
+        }
+
+    }
+    
+    
+    a{
+        button{
+            top: 30%;
+            right: 50%;
+        }
+    }
+    .image{
+        img{
+            display: none;
+        }
+
+    }
+}

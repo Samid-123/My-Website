@@ -1,0 +1,128 @@
+main{
+    .login-page{
+        background-color: rgb(57, 206, 206);
+        height: 100vh;
+        .col-6{
+            margin-top: 120px;
+            margin-left: 25%;
+            animation-duration: 1s;
+            .login-container{
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                border: 2px solid black;
+                display: flex;
+                justify-content: center;
+                padding: 150px 35px;
+                .login-form{
+                    
+                    position: relative;
+                    h2{
+                        position: absolute;
+                        top: -100px;
+                        left: 20%;
+                    }
+                    img{
+                        width: 25px;
+                        margin-left: 20px;
+                    }
+                    
+                    input{
+                        background-color: yellow;
+                        margin: 10px 0;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 5px 5px;
+                          transition: 0.3s;                    
+                }
+                ::placeholder{
+                    color: black;
+                    font-weight: 500;
+                }   
+                button{
+                    padding: 5px 15px;
+                    border: 2px solid lightcyan;
+                    background-color: aqua ;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    position: absolute;
+                    left: 50px;
+                    bottom: -50px;
+                    transition: 0.5s;
+
+                }
+                button:hover{
+                    background-color: black;
+                    color: aqua;
+                    transition: 0.5s;
+                }
+                input:focus {
+                    outline: none;
+                }
+                input:hover{
+                    background-color: rgb(236, 236, 86);
+                    transition: 0.3s;
+                }
+                a{
+                    position: absolute;
+                    bottom: -120px;
+                    left: 15%;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.2s;
+
+                }
+                a:hover{
+                    color: rgb(199, 192, 192);
+                    transition: 0.2s;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 995px) {
+    .login-page {
+        .col-6 {
+            margin-top: 60px;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+
+            .login-container {
+                padding: 100px 20px;
+                max-width: 400px;
+
+                .login-form {
+                    h2 {
+                        top: -80px;
+                        left: 10%;
+                    }
+
+                    button {
+                        left: 20px;
+                        bottom: -40px;
+                    }
+
+                    a {
+                        left: 10%;
+                        bottom: -100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
